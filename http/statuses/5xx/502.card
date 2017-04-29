@@ -1,0 +1,9 @@
+tags: 
+-----
+502
+-----
+Bad Gateway
+indicates that the server, while acting as a gateway or proxy, received an invalid response from an inbound server it accessed while attempting to fulfill the request.
+
+[RFC7231#6.6.3](https://tools.ietf.org/html/rfc7231#section-6.6.3),
+[RFC2616#10.5.4](https://tools.ietf.org/html/rfc2616#section-10.5.3)

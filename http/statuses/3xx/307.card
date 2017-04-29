@@ -1,0 +1,9 @@
+tags: 
+-----
+307
+-----
+Temporary Redirect
+indicates that the target resource resides temporarily under a different URI and the user agent MUST NOT change the request method if it performs an automatic redirection to that URI.
+
+[RFC7231#6.4.7](https://tools.ietf.org/html/rfc7231#section-6.4.7),
+[RFC2616#10.3.8](https://tools.ietf.org/html/rfc2616#section-10.3.8)

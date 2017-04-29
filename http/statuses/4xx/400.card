@@ -1,0 +1,9 @@
+tags: 
+-----
+400
+-----
+Bad Request
+indicates that the server cannot or will not process the request because the received syntax is invalid, nonsensical, or exceeds some limitation on what the server is willing to process.
+
+[RFC7231#6.5.1](https://tools.ietf.org/html/rfc7231#section-6.5.1),
+[RFC2616#10.4.1](https://tools.ietf.org/html/rfc2616#section-10.4.1)

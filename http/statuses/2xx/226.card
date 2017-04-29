@@ -1,0 +1,8 @@
+tags: 
+-----
+226
+-----
+IM Used
+The server has fulfilled a GET request for the resource, and the response is a representation of the result of one or more instance-manipulations applied to the current instance.
+
+[RFC3229#10.4.1](https://tools.ietf.org/html/rfc3229#section-10.4.1)

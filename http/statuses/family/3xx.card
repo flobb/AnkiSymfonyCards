@@ -1,0 +1,9 @@
+tags: 
+-----
+3xx
+-----
+Redirection ~ ask that dude over there
+indicates that further action needs to be taken by the user agent in order to fulfill the request.
+
+[RFC7231#6.4](https://tools.ietf.org/html/rfc7231#section-6.4),
+[RFC2616#10.3](https://tools.ietf.org/html/rfc2616#section-10.3)

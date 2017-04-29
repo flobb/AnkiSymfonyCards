@@ -1,0 +1,9 @@
+tags: 
+-----
+410
+-----
+Gone
+indicates that access to the target resource is no longer available at the origin server and that this condition is likely to be permanent.
+
+[RFC7231#6.5.9](https://tools.ietf.org/html/rfc7231#section-6.5.9),
+[RFC2616#10.4.11](https://tools.ietf.org/html/rfc2616#section-10.4.11)

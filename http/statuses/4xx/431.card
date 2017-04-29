@@ -1,0 +1,8 @@
+tags: 
+-----
+431
+-----
+Request Header Fields Too Large
+indicates that the server is unwilling to process the request because its header fields are too large.
+
+[RFC6585#5](https://tools.ietf.org/html/rfc6585#section-5)

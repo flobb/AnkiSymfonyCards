@@ -1,0 +1,9 @@
+tags: 
+-----
+407
+-----
+Proxy Authentication Required
+is similar to 401 (Unauthorized), but indicates that the client needs to authenticate itself in order to use a proxy.
+
+[RFC7235#3.2](https://tools.ietf.org/html/rfc7235#section-3.2),
+[RFC2616#10.4.8](https://tools.ietf.org/html/rfc2616#section-10.4.8)

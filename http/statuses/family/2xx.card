@@ -1,0 +1,9 @@
+tags: 
+-----
+2xx
+-----
+Successful ~ cool
+indicates that the client's request was successfully received, understood, and accepted.
+
+[RFC7231#6.3](https://tools.ietf.org/html/rfc7231#section-6.3),
+[RFC2616#10.2](https://tools.ietf.org/html/rfc2616#section-10.2)

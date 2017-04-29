@@ -1,0 +1,9 @@
+tags: 
+-----
+411
+-----
+Length Required
+indicates that the server refuses to accept the request without a defined Content-Length.
+
+[RFC7231#6.5.10](https://tools.ietf.org/html/rfc7231#section-6.5.10),
+[RFC2616#10.4.12](https://tools.ietf.org/html/rfc2616#section-10.4.12)

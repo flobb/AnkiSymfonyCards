@@ -1,0 +1,8 @@
+tags: 
+-----
+511
+-----
+Network Authentication Required
+indicates that the client needs to authenticate to gain network access.
+
+[RFC6585#6](https://tools.ietf.org/html/rfc6585#section-6)

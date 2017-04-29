@@ -1,0 +1,9 @@
+tags: 
+-----
+201
+-----
+Created
+indicates that the request has been fulfilled and has resulted in one or more new resources being created.
+
+[RFC7231#6.3.2](https://tools.ietf.org/html/rfc7231#section-6.3.2),
+[RFC2616#10.2.2](https://tools.ietf.org/html/rfc2616#section-10.2.2)

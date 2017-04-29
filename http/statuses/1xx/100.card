@@ -1,0 +1,9 @@
+tags: 
+-----
+100
+-----
+Continue
+indicates that the initial part of a request has been received and has not yet been rejected by the server.
+
+[RFC7231#6.2.1](https://tools.ietf.org/html/rfc7231#section-6.2.1),
+[RFC2616#10.1.1](https://tools.ietf.org/html/rfc2616#section-10.1.1)

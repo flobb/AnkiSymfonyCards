@@ -1,0 +1,8 @@
+tags: 
+-----
+423
+-----
+Locked
+means the source or destination resource of a method is locked.
+
+[RFC5218#10.4](https://tools.ietf.org/html/rfc2518#section-10.4)

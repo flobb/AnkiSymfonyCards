@@ -1,0 +1,9 @@
+tags: 
+-----
+206
+-----
+Partial Content
+indicates that the server is successfully fulfilling a range request for the target resource by transferring one or more parts of the selected representation that correspond to the satisfiable ranges found in the requests's Range header field.
+
+[RFC7233#4.1](https://tools.ietf.org/html/rfc7233#section-4.1),
+[RFC2616#10.2.7](https://tools.ietf.org/html/rfc2616#section-10.2.7)

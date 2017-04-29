@@ -1,0 +1,9 @@
+tags: 
+-----
+403
+-----
+Forbidden
+indicates that the server understood the request but refuses to authorize it.
+
+[RFC7231#6.5.3](https://tools.ietf.org/html/rfc7231#section-6.5.3),
+[RFC2616#10.4.4](https://tools.ietf.org/html/rfc2616#section-10.4.4)

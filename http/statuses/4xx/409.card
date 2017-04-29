@@ -1,0 +1,9 @@
+tags: 
+-----
+409
+-----
+Conflict
+indicates that the request could not be completed due to a conflict with the current state of the resource.
+
+[RFC7231#6.5.8](https://tools.ietf.org/html/rfc7231#section-6.5.8),
+[RFC2616#10.4.10](https://tools.ietf.org/html/rfc2616#section-10.4.10)
