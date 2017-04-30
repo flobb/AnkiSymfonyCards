@@ -21,7 +21,8 @@ $httpCardDirectory = realpath(__DIR__.'/..').'/http/';
 $tmpDirectory = sys_get_temp_dir().'/'.uniqid('AnkiSymfony3Cards_').'/';
 $httpRepository = 'git@github.com:for-GET/know-your-http-well.git';
 
-function writeCard($fs, $filepath, $question, $answer, array $tags = []) {
+function writeCard($fs, $filepath, $question, $answer, array $tags = [])
+{
     $fs->dumpFile($filepath, sprintf(
         "tags: %s\r\n-----\r\n%s\r\n-----\r\n%s\r\n",
         implode(' ', $tags),
@@ -31,7 +32,6 @@ function writeCard($fs, $filepath, $question, $answer, array $tags = []) {
 }
 
 try {
-
     $output->writeln('<info>Running checks...</info>');
 
     if (!$fs->exists($httpCardDirectory)) {
@@ -45,6 +45,7 @@ try {
             '<error>The repository url doesn\'t seem valid or reachable, given: "%s".</error>',
             $httpRepository
         ));
+
         return;
     }
 
@@ -64,6 +65,7 @@ try {
             '<error>The file "%s" doesn\'t exists.</error>',
             $filename
         ));
+
         return;
     }
 
@@ -76,6 +78,7 @@ try {
 
     if (0 === count($matches)) {
         $output->writeln('<error>Cannot find the statuses in the file.</error>');
+
         return;
     }
 
@@ -95,7 +98,6 @@ try {
     }
 
     foreach ($matches as $cardData) {
-
         $question = $cardData[1];
 
         if (!empty($cardData[5])) {
@@ -103,9 +105,7 @@ try {
             // Family status
             $answer = $cardData[3].' ~ '.$cardData[5]."\r\n".$cardData[4];
             $filepath = $familyCardDirectory.$question.'.card';
-
         } else {
-
             $statusCardDirectory = $statusesCardDirectory.$cardData[2].'xx/';
 
             if (!$fs->exists($statusCardDirectory)) {
@@ -115,7 +115,6 @@ try {
             // Usual status
             $answer = $cardData[3]."\r\n".$cardData[4];
             $filepath = $statusCardDirectory.'/'.$question.'.card';
-
         }
 
         preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $cardData[6], $links, PREG_SET_ORDER);
@@ -147,6 +146,7 @@ try {
             '<error>The file "%s" doesn\'t exists.</error>',
             $filename
         ));
+
         return;
     }
 
@@ -159,6 +159,7 @@ try {
 
     if (0 === count($matches)) {
         $output->writeln('<error>Cannot find the methods in the file.</error>');
+
         return;
     }
 
@@ -172,7 +173,6 @@ try {
     }
 
     foreach ($matches as $cardData) {
-
         $filepath = $methodsCardDirectory.mb_strtolower($cardData[1]).'.card';
         $question = $cardData[1];
         $answer = sprintf(
@@ -206,7 +206,6 @@ try {
     $fs->remove($tmpDirectory);
 
     $output->writeln('<info>End</info>');
-
 } catch (\Exception $e) {
 
     // Try to remove the temporary dir
