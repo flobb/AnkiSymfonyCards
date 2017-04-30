@@ -1,0 +1,12 @@
+tags: request
+-----
+PUT
+-----
+requests that the state of the target resource be created or replaced with the state defined by the representation enclosed in the request message payload.
+
+Safe: ✘
+Idempotent: ✔
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.4">RFC7231#4.3.4</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.6">RFC2616#9.6</a>

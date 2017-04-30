@@ -22,11 +22,8 @@ $tmpDirectory = sys_get_temp_dir().'/'.uniqid('AnkiSymfony3Cards_').'/';
 $httpRepository = 'git@github.com:for-GET/know-your-http-well.git';
 
 function writeCard($fs, $filepath, $question, $answer, array $tags = []) {
-    if ($fs->exists($filepath)) {
-        $fs->remove($filepath);
-    }
     $fs->dumpFile($filepath, sprintf(
-        "tags: %s\r\n-----\r\n%s\r\n-----\r\n%s",
+        "tags: %s\r\n-----\r\n%s\r\n-----\r\n%s\r\n",
         implode(' ', $tags),
         $question,
         $answer
@@ -97,25 +94,14 @@ try {
         $fs->mkdir($familyCardDirectory);
     }
 
-    $currentFamily = '';
     foreach ($matches as $cardData) {
 
         $question = $cardData[1];
-        $cardData[6] = preg_replace('# *<br> *#', "\r\n", $cardData[6]);
-
-        if (!$fs->exists($statusesCardDirectory.$currentFamily)) {
-            $fs->mkdir($statusesCardDirectory.$currentFamily);
-        }
 
         if (!empty($cardData[5])) {
 
             // Family status
             $answer = $cardData[3].' ~ '.$cardData[5]."\r\n".$cardData[4];
-
-            if (!empty($cardData[6])) {
-                $answer .= "\r\n\r\n".$cardData[6];
-            }
-
             $filepath = $familyCardDirectory.$question.'.card';
 
         } else {
@@ -128,20 +114,91 @@ try {
 
             // Usual status
             $answer = $cardData[3]."\r\n".$cardData[4];
-
-            if (!empty($cardData[6])) {
-                $answer .= "\r\n\r\n".$cardData[6];
-            }
-
             $filepath = $statusCardDirectory.'/'.$question.'.card';
 
         }
 
-        writeCard($fs, $filepath, $question, $answer);
+        preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $cardData[6], $links, PREG_SET_ORDER);
+        if (0 < count($links)) {
+            $answer .= "\r\n\r\n";
+            $htmlLinks = [];
+            foreach ($links as $link) {
+                $htmlLinks[] = sprintf('<a href="%s">%s</a>', $link[2], $link[1]);
+            }
+            $answer .= implode("\r\n", $htmlLinks);
+        }
+
+        writeCard($fs, $filepath, $question, $answer, ['response']);
         $progress->advance();
     }
 
     $progress->finish();
+    unset($filename, $filepath, $matches, $progress, $statusesCardDirectory, $familyCardDirectory, $cardData, $question, $answer, $statusCardDirectory, $links, $htmlLinks, $link);
+    $output->writeln('');
+
+    // Extract methods cards
+    $output->writeln('<info>Extracting methods data...</info>');
+
+    $filename = 'methods.md';
+    $filepath = $tmpDirectory.$filename;
+
+    if (!$fs->exists($filepath)) {
+        $output->writeln(sprintf(
+            '<error>The file "%s" doesn\'t exists.</error>',
+            $filename
+        ));
+        return;
+    }
+
+    preg_match_all(
+        '#`([^`]*)` \| "([^"]*)" \| (✔|✘) \| (✔|✘) \| (✔|✘) \| (.*)\n#Uu',
+        file_get_contents($filepath),
+        $matches,
+        PREG_SET_ORDER
+    );
+
+    if (0 === count($matches)) {
+        $output->writeln('<error>Cannot find the methods in the file.</error>');
+        return;
+    }
+
+    $output->writeln('<info>Writing methods cards...</info>');
+    $progress = new ProgressBar($output, count($matches));
+    $progress->start();
+
+    $methodsCardDirectory = $httpCardDirectory.'/methods/';
+    if (!$fs->exists($methodsCardDirectory)) {
+        $fs->mkdir($methodsCardDirectory);
+    }
+
+    foreach ($matches as $cardData) {
+
+        $filepath = $methodsCardDirectory.mb_strtolower($cardData[1]).'.card';
+        $question = $cardData[1];
+        $answer = sprintf(
+            "%s\r\n\r\nSafe: %s\r\nIdempotent: %s\r\nCacheable: %s",
+            $cardData[2],
+            $cardData[3],
+            $cardData[4],
+            $cardData[5]
+        );
+
+        preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $cardData[6], $links, PREG_SET_ORDER);
+        if (0 < count($links)) {
+            $answer .= "\r\n\r\n";
+            $htmlLinks = [];
+            foreach ($links as $link) {
+                $htmlLinks[] = sprintf('<a href="%s">%s</a>', $link[2], $link[1]);
+            }
+            $answer .= implode("\r\n", $htmlLinks);
+        }
+
+        writeCard($fs, $filepath, $question, $answer, ['request']);
+        $progress->advance();
+    }
+
+    $progress->finish();
+    unset($filename, $filepath, $matches, $progress, $methodsCardDirectory, $cardData, $question, $answer, $links, $htmlLinks, $link);
     $output->writeln('');
 
     // Remove the repository

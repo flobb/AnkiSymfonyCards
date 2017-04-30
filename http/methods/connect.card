@@ -1,0 +1,12 @@
+tags: request
+-----
+CONNECT
+-----
+requests that the recipient establish a tunnel to the destination origin server identified by the request-target and, if successful, thereafter restrict its behavior to blind forwarding of packets, in both directions, until the connection is closed.
+
+Safe: ✔
+Idempotent: ✔
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.6">RFC7231#4.3.6</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.9">RFC2616#9.9</a>

@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 101
 -----
 Switching Protocols
 indicates that the server understands and is willing to comply with the client's request, via the Upgrade header field, for a change in the application protocol being used on this connection.
 
-[RFC7231#6.2.2](https://tools.ietf.org/html/rfc7231#section-6.2.2),
-[RFC2616#10.1.2](https://tools.ietf.org/html/rfc2616#section-10.1.2)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.2.2">RFC7231#6.2.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.1.2">RFC2616#10.1.2</a>

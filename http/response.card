@@ -1,0 +1,9 @@
+tags: response
+-----
+format of an HTTP response
+-----
+Http message that contains :
+- a status line which includes the status code and reason message (e.g., HTTP/1.1 200 OK).
+- header fields (e.g., Content-Type: text/html).
+- an empty line.
+- an optional message body.

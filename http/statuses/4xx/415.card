@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 415
 -----
 Unsupported Media Type
 indicates that the origin server is refusing to service the request because the payload is in a format not supported by the target resource for this method.
 
-[RFC7231#6.5.13](https://tools.ietf.org/html/rfc7231#section-6.5.13),
-[RFC2616#10.4.16](https://tools.ietf.org/html/rfc2616#section-10.4.16)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.5.13">RFC7231#6.5.13</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.4.16">RFC2616#10.4.16</a>

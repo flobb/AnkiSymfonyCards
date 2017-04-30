@@ -1,8 +1,8 @@
-tags: 
+tags: response
 -----
 506
 -----
 Variant Also Negotiates
 indicates that the server has an internal configuration error: the chosen variant resource is configured to engage in transparent content negotiation itself, and is therefore not a proper end point in the negotiation process.
 
-[RFC2295#8.1](https://tools.ietf.org/html/rfc2295#section-8.1)
+<a href="https://tools.ietf.org/html/rfc2295#section-8.1">RFC2295#8.1</a>

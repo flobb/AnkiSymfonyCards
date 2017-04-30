@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 505
 -----
 HTTP Version Not Supported
 indicates that the server does not support, or refuses to support, the protocol version that was used in the request message.
 
-[RFC7231#6.6.6](https://tools.ietf.org/html/rfc7231#section-6.6.6),
-[RFC2616#10.5.6](https://tools.ietf.org/html/rfc2616#section-10.5.6)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.6.6">RFC7231#6.6.6</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.5.6">RFC2616#10.5.6</a>

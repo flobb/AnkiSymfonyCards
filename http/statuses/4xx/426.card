@@ -1,8 +1,8 @@
-tags: 
+tags: response
 -----
 426
 -----
 Upgrade Required
 indicates that the server refuses to perform the request using the current protocol but might be willing to do so after the client upgrades to a different protocol.
 
-[RFC7231#6.5.15](https://tools.ietf.org/html/rfc7231#section-6.5.15)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.5.15">RFC7231#6.5.15</a>

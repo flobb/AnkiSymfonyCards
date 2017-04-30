@@ -1,0 +1,12 @@
+tags: request
+-----
+GET
+-----
+requests transfer of a current selected representation for the target resource.
+
+Safe: ✔
+Idempotent: ✔
+Cacheable: ✔
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.1">RFC7231#4.3.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.3">RFC2616#9.3</a>

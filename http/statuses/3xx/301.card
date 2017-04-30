@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 301
 -----
 Moved Permanently
 indicates that the target resource has been assigned a new permanent URI and any future references to this resource ought to use one of the enclosed URIs.
 
-[RFC7231#6.4.2](https://tools.ietf.org/html/rfc7231#section-6.4.2),
-[RFC2616#10.3.2](https://tools.ietf.org/html/rfc2616#section-10.3.2)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.4.2">RFC7231#6.4.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.3.2">RFC2616#10.3.2</a>

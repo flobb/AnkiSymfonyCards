@@ -1,0 +1,8 @@
+tags: request
+-----
+cacheable
+-----
+Request methods are considered like that if it is possible and useful to answer a current client request with a stored response from a prior request.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.2.3">RFC7231#4.2.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.1.2">RFC2616#9.1.2</a>

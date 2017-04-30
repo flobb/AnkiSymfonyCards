@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 500
 -----
 Internal Server Error
 indicates that the server encountered an unexpected condition that prevented it from fulfilling the request.
 
-[RFC7231#6.6.1](https://tools.ietf.org/html/rfc7231#section-6.6.1),
-[RFC2616#10.5.2](https://tools.ietf.org/html/rfc2616#section-10.5.1)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.6.1">RFC7231#6.6.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.5.1">RFC2616#10.5.2</a>

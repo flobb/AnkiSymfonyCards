@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 304
 -----
 Not Modified
 indicates that a conditional GET request has been received and would have resulted in a 200 (OK) response if it were not for the fact that the condition has evaluated to false.
 
-[RFC7232#4.1](https://tools.ietf.org/html/rfc7232#section-4.1),
-[RFC2616#10.3.5](https://tools.ietf.org/html/rfc2616#section-10.3.5)
+<a href="https://tools.ietf.org/html/rfc7232#section-4.1">RFC7232#4.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.3.5">RFC2616#10.3.5</a>

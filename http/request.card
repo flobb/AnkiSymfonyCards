@@ -1,0 +1,9 @@
+tags: request
+-----
+format of an HTTP request
+-----
+Http message that contains :
+- a method line (e.g., GET /images/logo.png HTTP/1.1, which point a resource called /images/logo.png from the server).
+- header fields (e.g., Accept-Language: en).
+- an empty line.
+- an optional message body.

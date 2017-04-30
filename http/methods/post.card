@@ -1,0 +1,12 @@
+tags: request
+-----
+POST
+-----
+requests that the target resource process the representation enclosed in the request according to the resource's own specific semantics.
+
+Safe: ✘
+Idempotent: ✘
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.3">RFC7231#4.3.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.5">RFC2616#9.5</a>

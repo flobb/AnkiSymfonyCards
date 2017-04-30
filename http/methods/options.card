@@ -1,0 +1,12 @@
+tags: request
+-----
+OPTIONS
+-----
+requests information about the communication options available on the request/response chain identified by the effective request URI.
+
+Safe: ✔
+Idempotent: ✔
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.7">RFC7231#4.3.7</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.2">RFC2616#9.2</a>

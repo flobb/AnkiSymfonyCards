@@ -1,8 +1,8 @@
-tags: 
+tags: response
 -----
 102
 -----
 Processing
 is an interim response used to inform the client that the server has accepted the complete request, but has not yet completed it.
 
-[RFC5218#10.1](https://tools.ietf.org/html/rfc2518#section-10.1)
+<a href="https://tools.ietf.org/html/rfc2518#section-10.1">RFC5218#10.1</a>

@@ -1,0 +1,8 @@
+tags: request
+-----
+idempotent
+-----
+Request methods are considered like that if the intended effect of multiple identical requests is the same as for a single request.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.2.2">RFC7231#4.2.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.1.2">RFC2616#9.1.2</a>

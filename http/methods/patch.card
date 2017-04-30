@@ -1,0 +1,11 @@
+tags: request
+-----
+PATCH
+-----
+requests that a set of changes described in the request entity be applied to the resource identified by the Request-URI.
+
+Safe: ✘
+Idempotent: ✘
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc5789#section-2">RFC5789</a>

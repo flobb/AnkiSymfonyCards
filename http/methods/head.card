@@ -1,0 +1,12 @@
+tags: request
+-----
+HEAD
+-----
+is identical to GET except that the server MUST NOT send a message body in the response (i.e., the response terminates at the end of the header block).
+
+Safe: ✔
+Idempotent: ✔
+Cacheable: ✔
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.2">RFC7231#4.3.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.4">RFC2616#9.4</a>

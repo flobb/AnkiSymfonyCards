@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 414
 -----
 URI Too Long
 indicates that the server is refusing to service the request because the request-target is longer than the server is willing to interpret.
 
-[RFC7231#6.5.12](https://tools.ietf.org/html/rfc7231#section-6.5.12),
-[RFC2616#10.4.15](https://tools.ietf.org/html/rfc2616#section-10.4.15)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.5.12">RFC7231#6.5.12</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.4.15">RFC2616#10.4.15</a>

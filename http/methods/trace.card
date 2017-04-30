@@ -1,0 +1,12 @@
+tags: request
+-----
+TRACE
+-----
+is used to invoke a remote, application-layer loopback of the request message.
+
+Safe: ✔
+Idempotent: ✔
+Cacheable: ✘
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.3.8">RFC7231#4.3.8</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.8">RFC2616#9.8</a>

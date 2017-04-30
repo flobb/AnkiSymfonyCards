@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 412
 -----
 Precondition Failed
 indicates that one or more preconditions given in the request header fields evaluated to false when tested on the server.
 
-[RFC7232#4.2](https://tools.ietf.org/html/rfc7232#section-4.2),
-[RFC2616#10.4.13](https://tools.ietf.org/html/rfc2616#section-10.4.13)
+<a href="https://tools.ietf.org/html/rfc7232#section-4.2">RFC7232#4.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.4.13">RFC2616#10.4.13</a>

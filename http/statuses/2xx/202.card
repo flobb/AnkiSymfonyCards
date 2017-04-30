@@ -1,9 +1,9 @@
-tags: 
+tags: response
 -----
 202
 -----
 Accepted
 indicates that the request has been accepted for processing, but the processing has not been completed.
 
-[RFC7231#6.3.3](https://tools.ietf.org/html/rfc7231#section-6.3.3),
-[RFC2616#10.2.3](https://tools.ietf.org/html/rfc2616#section-10.2.3)
+<a href="https://tools.ietf.org/html/rfc7231#section-6.3.3">RFC7231#6.3.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-10.2.3">RFC2616#10.2.3</a>

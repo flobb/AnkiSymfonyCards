@@ -1,0 +1,8 @@
+tags: request
+-----
+safe
+-----
+Request methods are considered like that if their defined semantics are essentially read-only; i.e., the client does not request, and does not expect, any state change on the origin server as a result of applying this kind of method to a target resource. Likewise, reasonable use of this kind of method is not expected to cause any harm, loss of property, or unusual burden on the origin server.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-4.2.1">RFC7231#4.2.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-9.1.1">RFC2616#9.1.1</a>

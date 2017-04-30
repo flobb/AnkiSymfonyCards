@@ -1,8 +1,8 @@
-tags: 
+tags: response
 -----
 428
 -----
 Precondition Required
 indicates that the origin server requires the request to be conditional.
 
-[RFC6585#3](https://tools.ietf.org/html/rfc6585#section-3)
+<a href="https://tools.ietf.org/html/rfc6585#section-3">RFC6585#3</a>
