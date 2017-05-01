@@ -241,7 +241,6 @@ try {
     }
 
     foreach ($matches as $cardData) {
-
         $filepath = $headersCardDirectory.mb_strtolower($cardData[1]).'.card';
         $question = $cardData[1];
         $answer = $cardData[2];
