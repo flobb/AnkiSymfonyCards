@@ -241,6 +241,11 @@ try {
     }
 
     foreach ($matches as $cardData) {
+
+        if (in_array($cardData[2], ['', 'standard'], true)) {
+            continue;
+        }
+
         $filepath = $headersCardDirectory.mb_strtolower($cardData[1]).'.card';
         $question = $cardData[1];
         $answer = $cardData[2];
