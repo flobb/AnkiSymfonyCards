@@ -91,7 +91,7 @@ try {
         $fs->mkdir($statusesCardDirectory);
     }
 
-    $familyCardDirectory = $statusesCardDirectory.'/family/';
+    $familyCardDirectory = $statusesCardDirectory.'/families/';
 
     if (!$fs->exists($familyCardDirectory)) {
         $fs->mkdir($familyCardDirectory);

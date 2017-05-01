@@ -1,0 +1,5 @@
+tags: request
+-----
+pitfall with POST, PATCH and cacheable
+-----
+They are not cacheable by default, like GET and HEAD, but become cacheable by using appropriate Cache-Control or Expires response headers.
