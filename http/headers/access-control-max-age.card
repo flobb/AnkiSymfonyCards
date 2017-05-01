@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Max-Age
+-----
+indicates how long the results of a preflight request can be cached in a preflight result cache
+
+<a href="https://www.w3.org/TR/cors/#access-control-max-age-response-header">CORS</a>

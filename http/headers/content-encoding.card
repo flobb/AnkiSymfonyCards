@@ -1,0 +1,8 @@
+tags: 
+-----
+Content-Encoding
+-----
+indicates what content codings have been applied to the representation, beyond those inherent in the media type, and thus what decoding mechanisms have to be applied in order to obtain data in the media type referenced by the Content-Type header field.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-3.1.2.2">RFC7231#3.1.2.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.11">RFC2616#14.11</a>

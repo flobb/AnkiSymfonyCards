@@ -1,0 +1,7 @@
+tags: 
+-----
+Prefer
+-----
+is used to indicate that particular server behaviors are preferred by the client, but not required for successful completion of the request.
+
+<a href="https://tools.ietf.org/html/rfc7240#section-2">RFC7240#2</a>

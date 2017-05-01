@@ -1,0 +1,8 @@
+tags: 
+-----
+User-Agent
+-----
+contains information about the user agent originating the request, which is often used by servers to help identify the scope of reported interoperability problems, to work around or tailor responses to avoid particular user agent limitations, and for analytics regarding browser or operating system use.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-5.5.3">RFC7231#5.5.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.43">RFC2616#14.43</a>

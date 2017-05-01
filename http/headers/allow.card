@@ -1,0 +1,8 @@
+tags: 
+-----
+Allow
+-----
+lists the set of methods advertised as supported by the target resource.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-7.4.1">RFC7231#7.4.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.7">RFC2616#14.7</a>

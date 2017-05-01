@@ -1,0 +1,8 @@
+tags: 
+-----
+Age
+-----
+conveys the sender's estimate of the amount of time since the response was generated or successfully validated at the origin server.
+
+<a href="https://tools.ietf.org/html/rfc7234#section-5.1">RFC7234#5.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.6">RFC2616#14.6</a>

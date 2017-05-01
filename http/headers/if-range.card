@@ -1,0 +1,8 @@
+tags: 
+-----
+If-Range
+-----
+Informally, its meaning is: if the representation is unchanged, send me the part(s) that I am requesting in Range; otherwise, send me the entire representation.
+
+<a href="https://tools.ietf.org/html/rfc7233#section-3.2">RFC7233#3.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.27">RFC2616#14.27</a>

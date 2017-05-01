@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Allow-Origin
+-----
+indicates whether a resource can be shared
+
+<a href="https://www.w3.org/TR/cors/#access-control-allow-origin-response-header">CORS</a>

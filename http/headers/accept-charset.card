@@ -1,0 +1,8 @@
+tags: 
+-----
+Accept-Charset
+-----
+can be sent by a user agent to indicate what charsets are acceptable in textual response content.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-5.3.3">RFC7231#5.3.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.2">RFC2616#14.2</a>

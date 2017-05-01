@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Allow-Headers
+-----
+indicates, as part of the response to a preflight request, which header field names can be used during the actual request
+
+<a href="https://www.w3.org/TR/cors/#access-control-allow-headers-response-header">CORS</a>

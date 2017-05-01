@@ -1,0 +1,8 @@
+tags: 
+-----
+Expect
+-----
+is used to indicate that particular server behaviors are required by the client.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-5.1.1">RFC7231#5.1.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.20">RFC2616#14.20</a>

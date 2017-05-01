@@ -1,0 +1,7 @@
+tags: 
+-----
+DNT
+-----
+defined as the means for expressing a user's tracking preference via HTTP.
+
+<a href="https://www.w3.org/TR/tracking-dnt/#dnt-header-field">Tracking Preference Expression (DNT)</a>

@@ -1,0 +1,8 @@
+tags: 
+-----
+Content-Type
+-----
+indicates the media type of the associated representation: either the representation enclosed in the message payload or the selected representation, as determined by the message semantics.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-3.1.1.5">RFC7231#3.1.1.5</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.17">RFC2616#14.17</a>

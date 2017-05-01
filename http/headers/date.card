@@ -1,0 +1,8 @@
+tags: 
+-----
+Date
+-----
+represents the date and time at which the message was originated
+
+<a href="https://tools.ietf.org/html/rfc7231#section-7.1.1.2">RFC7231#7.1.1.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.18">RFC2616#14.18</a>

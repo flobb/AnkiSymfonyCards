@@ -1,0 +1,8 @@
+tags: 
+-----
+Warning
+-----
+is used to carry additional information about the status or transformation of a message that might not be reflected in the message.
+
+<a href="https://tools.ietf.org/html/rfc7234#section-7.6">RFC7234#7.6</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.46">RFC2616#14.46</a>

@@ -1,0 +1,8 @@
+tags: 
+-----
+Location
+-----
+is used in some responses to refer to a specific resource in relation to the response.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-7.1.2">RFC7231#7.1.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.30">RFC2616#14.30</a>

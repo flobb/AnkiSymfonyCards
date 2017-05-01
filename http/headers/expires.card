@@ -1,0 +1,8 @@
+tags: 
+-----
+Expires
+-----
+gives the date/time after which the response is considered stale.
+
+<a href="https://tools.ietf.org/html/rfc7234#section-7.3">RFC7234#7.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.21">RFC2616#14.21</a>

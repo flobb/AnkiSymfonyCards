@@ -1,0 +1,8 @@
+tags: 
+-----
+Last-Modified
+-----
+provides a timestamp indicating the date and time at which the origin server believes the selected representation was last modified, as determined at the conclusion of handling the request.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-2.2">RFC7232#2.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.29">RFC2616#14.29</a>

@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Request-Headers
+-----
+indicates which headers will be used in the actual request as part of the preflight request
+
+<a href="https://www.w3.org/TR/cors/#access-control-request-headers-request-header">CORS</a>

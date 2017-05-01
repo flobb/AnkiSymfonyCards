@@ -1,0 +1,8 @@
+tags: 
+-----
+If-Match
+-----
+can be used to make a request method conditional on the current existence or value of an entity-tag for one or more representations of the target resource.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-3.1">RFC7232#3.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.24">RFC2616#14.24</a>

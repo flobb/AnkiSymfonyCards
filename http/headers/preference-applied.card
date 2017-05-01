@@ -1,0 +1,7 @@
+tags: 
+-----
+Preference-Applied
+-----
+MAY be included within a response message as an indication as to which Prefer tokens were honored by the server and applied to the processing of a request.
+
+<a href="https://tools.ietf.org/html/rfc7240#section-3">RFC7240#3</a>

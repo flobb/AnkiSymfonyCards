@@ -1,0 +1,8 @@
+tags: 
+-----
+WWW-Authenticate
+-----
+consists of at least one challenge that indicates the authentication scheme(s) and parameters applicable to the effective request URI.
+
+<a href="https://tools.ietf.org/html/rfc7235#section-4.4">RFC7235#4.4</a>
+<a href="https://tools.ietf.org/html/rfc7615#section-3">RFC7615#3</a>

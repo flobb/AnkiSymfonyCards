@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Expose-Headers
+-----
+indicates which headers are safe to expose to the API of a CORS API specification
+
+<a href="https://www.w3.org/TR/cors/#access-control-expose-headers-response-header">CORS</a>

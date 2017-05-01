@@ -1,0 +1,7 @@
+tags: 
+-----
+Content-Security-Policy-Report-Only
+-----
+lets servers experiment with policies by monitoring (rather than enforcing) a policy
+
+<a href="https://www.w3.org/TR/CSP/#content-security-policy-report-only-header-field">CSP</a>

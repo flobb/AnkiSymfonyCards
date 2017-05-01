@@ -1,0 +1,8 @@
+tags: 
+-----
+Content-Length
+-----
+can provide the anticipated size, as a decimal number of octets, for a potential payload body.
+
+<a href="https://tools.ietf.org/html/rfc7230#section-3.3.2">RFC7230#3.3.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.13">RFC2616#14.13</a>

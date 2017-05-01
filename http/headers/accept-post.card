@@ -1,0 +1,7 @@
+tags: 
+-----
+Accept-Post
+-----
+indicates server support for specific media types for entity bodies in HTTP POST requests.
+
+<a href="https://tools.ietf.org/html/draft-wilde-accept-post">draft-wilde-accept-post</a>

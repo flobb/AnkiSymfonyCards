@@ -1,0 +1,8 @@
+tags: 
+-----
+If-Modified-Since
+-----
+can be used with GET or HEAD to make the method conditional by modification date: if the selected representation has not been modified since the time specified in this field, then do not perform the request method; instead, respond as detailed below.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-3.3">RFC7232#3.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.25">RFC2616#14.25</a>

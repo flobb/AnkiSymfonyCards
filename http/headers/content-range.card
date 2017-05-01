@@ -1,0 +1,8 @@
+tags: 
+-----
+Content-Range
+-----
+is sent in a single part 206 (Partial Content) response to indicate the partial range of the selected representation enclosed as the message payload, sent in each part of a multipart 206 response to indicate the range enclosed within each body part, and sent in 416 (Range Not Satisfiable) responses to provide information about the selected representation.
+
+<a href="https://tools.ietf.org/html/rfc7233#section-4.2">RFC7233#4.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.16">RFC2616#14.16</a>

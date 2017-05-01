@@ -1,0 +1,8 @@
+tags: 
+-----
+Accept-Ranges
+-----
+allows a server to indicate that it supports range requests for the target resource.
+
+<a href="https://tools.ietf.org/html/rfc7233#section-2.3">RFC7233#2.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.5">RFC2616#14.5</a>

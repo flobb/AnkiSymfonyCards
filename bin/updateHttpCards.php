@@ -31,6 +31,19 @@ function writeCard($fs, $filepath, $question, $answer, array $tags = [])
     ));
 }
 
+function extractAndAddLinks(&$text, $haystack)
+{
+    preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $haystack, $links, PREG_SET_ORDER);
+    if (0 < count($links)) {
+        $text .= "\r\n\r\n";
+        $htmlLinks = [];
+        foreach ($links as $link) {
+            $htmlLinks[] = sprintf('<a href="%s">%s</a>', $link[2], $link[1]);
+        }
+        $text .= implode("\r\n", $htmlLinks);
+    }
+}
+
 try {
     $output->writeln('<info>Running checks...</info>');
 
@@ -117,22 +130,14 @@ try {
             $filepath = $statusCardDirectory.'/'.$question.'.card';
         }
 
-        preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $cardData[6], $links, PREG_SET_ORDER);
-        if (0 < count($links)) {
-            $answer .= "\r\n\r\n";
-            $htmlLinks = [];
-            foreach ($links as $link) {
-                $htmlLinks[] = sprintf('<a href="%s">%s</a>', $link[2], $link[1]);
-            }
-            $answer .= implode("\r\n", $htmlLinks);
-        }
+        extractAndAddLinks($answer, $cardData[6]);
 
         writeCard($fs, $filepath, $question, $answer, ['response']);
         $progress->advance();
     }
 
     $progress->finish();
-    unset($filename, $filepath, $matches, $progress, $statusesCardDirectory, $familyCardDirectory, $cardData, $question, $answer, $statusCardDirectory, $links, $htmlLinks, $link);
+    unset($filename, $filepath, $matches, $progress, $statusesCardDirectory, $familyCardDirectory, $cardData, $question, $answer, $statusCardDirectory);
     $output->writeln('');
 
     // Extract methods cards
@@ -183,22 +188,73 @@ try {
             $cardData[5]
         );
 
-        preg_match_all('#\[([^\]]*)\]\(([^)]*)\)#Uu', $cardData[6], $links, PREG_SET_ORDER);
-        if (0 < count($links)) {
-            $answer .= "\r\n\r\n";
-            $htmlLinks = [];
-            foreach ($links as $link) {
-                $htmlLinks[] = sprintf('<a href="%s">%s</a>', $link[2], $link[1]);
-            }
-            $answer .= implode("\r\n", $htmlLinks);
-        }
+        extractAndAddLinks($answer, $cardData[6]);
 
         writeCard($fs, $filepath, $question, $answer, ['request']);
         $progress->advance();
     }
 
     $progress->finish();
-    unset($filename, $filepath, $matches, $progress, $methodsCardDirectory, $cardData, $question, $answer, $links, $htmlLinks, $link);
+    unset($filename, $filepath, $matches, $progress, $methodsCardDirectory, $cardData, $question, $answer);
+    $output->writeln('');
+
+    // Extract headers cards
+    $output->writeln('<info>Extracting headers data...</info>');
+
+    $filename = 'headers.md';
+    $filepath = $tmpDirectory.$filename;
+
+    if (!$fs->exists($filepath)) {
+        $output->writeln(sprintf(
+            '<error>The file "%s" doesn\'t exists.</error>',
+            $filename
+        ));
+
+        return;
+    }
+
+    $content = file_get_contents($filepath);
+    $content = mb_substr($content, 0, mb_strpos($content, 'Less Common (subjective)'));
+
+    preg_match_all(
+        '#`([^`]*)` \| "([^"]*)" \| (.*)\n#Uu',
+        $content,
+        $matches,
+        PREG_SET_ORDER
+    );
+
+    unset($content);
+
+    if (0 === count($matches)) {
+        $output->writeln('<error>Cannot find the headers in the file.</error>');
+
+        return;
+    }
+
+    $output->writeln('<info>Writing headers cards...</info>');
+    $progress = new ProgressBar($output, count($matches));
+    $progress->start();
+
+    $headersCardDirectory = $httpCardDirectory.'/headers/';
+    if (!$fs->exists($headersCardDirectory)) {
+        $fs->mkdir($headersCardDirectory);
+    }
+
+    foreach ($matches as $cardData) {
+
+        $filepath = $headersCardDirectory.mb_strtolower($cardData[1]).'.card';
+        $question = $cardData[1];
+        $answer = $cardData[2];
+
+        extractAndAddLinks($answer, $cardData[3]);
+
+        writeCard($fs, $filepath, $question, $answer, []);
+
+        $progress->advance();
+    }
+
+    $progress->finish();
+    unset($filename, $filepath, $matches, $progress, $methodsCardDirectory, $cardData, $question, $answer);
     $output->writeln('');
 
     // Remove the repository

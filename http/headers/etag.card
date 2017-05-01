@@ -1,0 +1,8 @@
+tags: 
+-----
+ETag
+-----
+provides the current entity-tag for the selected representation, as determined at the conclusion of handling the request.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-2.3">RFC7232#2.3</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.19">RFC2616#14.19</a>

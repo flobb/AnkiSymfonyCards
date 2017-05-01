@@ -1,0 +1,8 @@
+tags: 
+-----
+If-None-Match
+-----
+can be used to make a request method conditional on not matching any of the current entity-tag values for representations of the target resource.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-3.2">RFC7232#3.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.26">RFC2616#14.26</a>

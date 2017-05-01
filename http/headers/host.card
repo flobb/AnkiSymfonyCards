@@ -1,0 +1,8 @@
+tags: 
+-----
+Host
+-----
+provides the host and port information from the target URI, enabling the origin server to distinguish among resources while servicing requests for multiple host names on a single IP address.
+
+<a href="https://tools.ietf.org/html/rfc7230#section-5.4">RFC7230#5.4</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.23">RFC2616#14.23</a>

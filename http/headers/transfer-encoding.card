@@ -1,0 +1,8 @@
+tags: 
+-----
+Transfer-Encoding
+-----
+lists the transfer coding names corresponding to the sequence of transfer codings that have been (or will be) applied to the payload body in order to form the message body.
+
+<a href="https://tools.ietf.org/html/rfc7230#section-3.3.1">RFC7230#3.3.1</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.41">RFC2616#14.41</a>

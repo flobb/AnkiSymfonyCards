@@ -1,0 +1,7 @@
+tags: 
+-----
+Content-Security-Policy
+-----
+is the preferred mechanism for delivering a CSP policy
+
+<a href="https://www.w3.org/TR/CSP/#content-security-policy-header-field">CSP</a>

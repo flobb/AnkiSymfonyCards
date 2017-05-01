@@ -1,0 +1,8 @@
+tags: 
+-----
+If-Unmodified-Since
+-----
+can be used to make a request method conditional by modification date: if the selected representation has been modified since the time specified in this field, then the server MUST NOT perform the requested operation and MUST instead respond with the 412 (Precondition Failed) status code.
+
+<a href="https://tools.ietf.org/html/rfc7232#section-3.4">RFC7232#3.4</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.28">RFC2616#14.28</a>

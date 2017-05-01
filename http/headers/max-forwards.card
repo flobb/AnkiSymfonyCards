@@ -1,0 +1,8 @@
+tags: 
+-----
+Max-Forwards
+-----
+provides a mechanism with the TRACE and OPTIONS methods to limit the number of times that the request is forwarded by proxies.
+
+<a href="https://tools.ietf.org/html/rfc7231#section-5.1.2">RFC7231#5.1.2</a>
+<a href="https://tools.ietf.org/html/rfc2616#section-14.31">RFC2616#14.31</a>

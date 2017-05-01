@@ -1,0 +1,8 @@
+tags: 
+-----
+Authorization
+-----
+allows a user agent to authenticate itself with a server -- usually, but not necessarily, after receiving a 401 (Unauthorized) response.
+
+<a href="https://tools.ietf.org/html/rfc7235#section-4.1">RFC7235#4.1</a>
+<a href="https://tools.ietf.org/html/rfc7616#section-3.4">RFC7616#3.4</a>

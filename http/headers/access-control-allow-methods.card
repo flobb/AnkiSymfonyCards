@@ -1,0 +1,7 @@
+tags: 
+-----
+Access-Control-Allow-Methods
+-----
+indicates, as part of the response to a preflight request, which methods can be used during the actual request
+
+<a href="https://www.w3.org/TR/cors/#access-control-allow-methods-response-header">CORS</a>
