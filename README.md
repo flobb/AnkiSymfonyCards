@@ -1,8 +1,8 @@
-# AnkiSymfony3Cards
+# AnkiSymfonyCards
 
 ## Description
 
-Cards for Anki to help in the Symfony 3 learning process. This is intended for people who already have notions about
+Cards for Anki to help in the Symfony learning process. This is intended for people who already have notions about
 Symfony.
 This repository should be used with
 [florianbelhomme/RepositoryToAnki](https://github.com/florianbelhomme/RepositoryToAnki)

@@ -18,7 +18,7 @@ $output = new ConsoleOutput();
 $fs = new Filesystem();
 
 $httpCardDirectory = realpath(__DIR__.'/..').'/http/';
-$tmpDirectory = sys_get_temp_dir().'/'.uniqid('AnkiSymfony3Cards_').'/';
+$tmpDirectory = sys_get_temp_dir().'/'.uniqid('AnkiSymfonyCards_').'/';
 $httpRepository = 'git@github.com:for-GET/know-your-http-well.git';
 
 function writeCard($fs, $filepath, $question, $answer, array $tags = [])
