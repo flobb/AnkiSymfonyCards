@@ -2,9 +2,9 @@
 
 <<<CONFIG
 packages:
-    - "symfony/console: ^3.2"
-    - "symfony/filesystem: ^3.2"
-    - "symfony/finder: ^3.2"
+    - "symfony/console: ^4.0"
+    - "symfony/filesystem: ^4.0"
+    - "symfony/finder: ^4.0"
     - "gitonomy/gitlib: ^1.0"
 CONFIG;
 
